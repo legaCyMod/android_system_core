@@ -77,7 +77,7 @@
 #define AID_SDCARD_AV     1034  /* external storage audio/video access */
 #define AID_SDCARD_ALL    1035  /* access all users external storage */
 #define AID_AUDIT         1036  /* audit daemon */
-#ifdef QCOM_FM_ENABLED
+#ifdef QCOM_MR1_FM
 #define AID_FM_RADIO      1037  /* FM radio */
 #endif
 
@@ -208,7 +208,7 @@ static const struct android_id_info android_ids[] = {
 #endif
 
     { "misc",          AID_MISC, },
-#ifdef QCOM_FM_ENABLED
+#ifdef QCOM_MR1_FM
     { "fm_radio",  AID_FM_RADIO, },
 #endif
     { "nobody",        AID_NOBODY, },
